@@ -1,7 +1,7 @@
-import user from './Profile/user.json';
-import Profile from "./Profile/Profile";
+import user from './components/Profile/user.json';
+import Profile from "./components/Profile/Profile";
 
-import '../index.css';
+import './index.css';
 
 export default function App() {
   return (
@@ -22,3 +22,4 @@ export default function App() {
       </div>
   );
 };
+
