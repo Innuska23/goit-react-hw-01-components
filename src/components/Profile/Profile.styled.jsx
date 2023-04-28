@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 export const CardUser = styled.div`
-    width: 360px;
+    width: 400px;
     padding-top: 15px;
     background-color: white;
     border-radius: 5px;
