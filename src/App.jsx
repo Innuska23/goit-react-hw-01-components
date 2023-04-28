@@ -2,6 +2,12 @@ import user from './components/Profile/user.json';
 import Profile from "./components/Profile/Profile";
 
 import './index.css';
+import data from './components/Statistics/data.json';
+import Statistics from 'components/Statistics/Statistics';
+
+import friends from './components/FriendList/friends.json';
+import FriendList from  './components/FriendList/FriendList'
+
 
 export default function App() {
   return (
@@ -9,7 +15,8 @@ export default function App() {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        height: '100vh',}}>
+        flexDirection: 'column',
+        }}>
 
         <Profile
           key={user.tag}
@@ -19,6 +26,9 @@ export default function App() {
           location={user.location}
           stats={user.stats}
         />
+        <Statistics title="Upload stats" stats={data} />
+        <Statistics stats={data} />
+        <FriendList friends={friends} />;
       </div>
   );
 };

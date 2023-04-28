@@ -6,6 +6,9 @@ export const CardUser = styled.div`
     background-color: white;
     border-radius: 5px;
     margin-bottom: 50px;
+    border: 1px solid gray;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 `;
 
 export const UserName = styled.div`
@@ -16,8 +19,10 @@ export const UserName = styled.div`
 export const Avatar = styled.img`
     display: flex;
     margin: 0 auto;
-    width: 280px;
-    height: 280px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #f3f6f9;
 `;
 
 export const Name = styled.p`
