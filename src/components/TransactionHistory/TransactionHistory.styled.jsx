@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const  TransactionHistoryTable = styled.table`
+export const TransactionHistoryTable = styled.table`
 width: 870px;
 border-radius: 10px;
 margin-top: 50px;

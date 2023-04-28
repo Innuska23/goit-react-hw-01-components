@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
-import {CardUser, UserName, Avatar, Name, Info, Stats, StatsItem, StatsInformation, StatsInfoQuantity} from './Profile.styled'
+import { CardUser, UserName, Avatar, Name, Info, Stats, StatsItem, StatsInformation, StatsInfoQuantity } from './Profile.styled';
 
-function Profile({avatar, username, tag, location, stats}) {
+function Profile({ avatar, username, tag, location, stats }) {
     return (
         <CardUser>
-            <Avatar src={avatar} alt='User avatar'/>
+            <Avatar src={avatar} alt='User avatar' />
             <UserName>
                 <Name>{username}</Name>
                 <Info>@{tag}</Info>
@@ -32,7 +32,7 @@ function Profile({avatar, username, tag, location, stats}) {
 Profile.propTypes = {
     username: PropTypes.string.isRequired,
     tag: PropTypes.string.isRequired,
-    location: PropTypes.string.isRequired, 
+    location: PropTypes.string.isRequired,
     stats: PropTypes.exact({
         followers: PropTypes.number.isRequired,
         views: PropTypes.number.isRequired,
